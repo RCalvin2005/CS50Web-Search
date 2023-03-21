@@ -2,6 +2,8 @@ $google-blue: #4285F4;
 $google-red: #DB4437;
 $google-yellow: #F4B400;
 $google-green: #0F9D58;
+$shadow: 0 1px 6px #20202035;
+$subdued-black: #353535;
 
 * {
     box-sizing: border-box;
@@ -28,6 +30,20 @@ a, .logo {
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
+}
+
+.link {
+    font-size: 0.9rem;
+
+    a {
+        color: $subdued-black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #000000;
+        text-decoration: underline;
+    }
 }
 
 .logo-container {
@@ -71,19 +87,32 @@ a, .logo {
     width: 600px;
     border-radius: 24px;
     border: 1px solid #DFE1E5;
-    padding: 10px 20px;
-    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input[type=text] {
+        width: 90%;
+        height: 100%;
+        padding: 5px 10px;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+    }
+
+    .fa-magnifying-glass {
+        color: #969697;
+    }
 }
 
-.bar:focus, .bar:hover{
-    outline: none;
-    box-shadow: 0 1px 6px #20202028;
+.bar:focus, .bar:hover, .bar:focus-within {
+    box-shadow: $shadow;
 }
 
 .button {
     background-color: #F6F6F6;
     border: 1px solid #F4F4F4;
-    color: #353535;
+    color: $subdued-black;
     border-radius: 4px;
     height: 36px;
     min-width: 54px;
@@ -94,5 +123,5 @@ a, .logo {
 
 .button:hover{
     border-color: #d8d8d8;
-    box-shadow: 0 1px 6px #20202028;
+    box-shadow: $shadow;
 }

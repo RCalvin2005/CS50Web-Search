@@ -3,23 +3,42 @@
     <head>
         <title>Image Search</title>
         <link rel="stylesheet" href="styles.css">
+
+        <!-- Roboto from Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+        <!-- FontAwesome Icons -->
+        <script src="https://kit.fontawesome.com/5c985a550d.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="links">
-            <div class="link">
-                <a href="index.html">Google Search</a>
+        <div class="grid-container">
+            <div class="link-container">
+                <div class="link">
+                    <a href="index.html">Google Search</a>
+                </div>
+                <div class="link">
+                    <a href="advanced.html">Advanced Search</a> 
+                </div>
             </div>
-            <div class="link">
-                <a href="advanced.html">Advanced Search</a> 
+            <div class="logo-container">
+                <div class="logo">
+                    <span class="blue">S</span><span class="red">e</span><span class="yellow">a</span><span class="blue">r</span><span class="green">c</span><span class="red">h</span>        
+                    <span id="images">images</span>
+                </div>
             </div>
+            <form action="https://google.com/search">
+                <div class="search-bar">
+                    <div class="bar">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input autocomplete="off" type="text" name="q">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass search-button"></i></button>
+                    </div>
+                    <input type="hidden" name="tbm" value="isch">
+                    <input class="button" type="submit" value="Google Image Search">
+                </div>
+            </form>
         </div>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="hidden" name="tbm" value="isch">
-            <input type="submit" value="Image Search">
-        </form>
     </body>
 </html>

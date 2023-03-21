@@ -49,6 +49,14 @@ a, .logo {
   text-align: center;
   margin-bottom: 30px;
 }
+.logo #images {
+  display: block;
+  color: #4285f4;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: end;
+  margin: -15px 5px 0 0;
+}
 
 .blue {
   color: #4285F4;
@@ -83,15 +91,25 @@ a, .logo {
   align-items: center;
 }
 .bar input[type=text] {
-  width: 90%;
+  width: 88%;
   height: 100%;
   padding: 5px 10px;
   font-size: 1rem;
   outline: none;
   border: none;
 }
-.bar .fa-magnifying-glass {
+.bar .search-icon {
   color: #969697;
+}
+.bar button[type=submit] {
+  border: none;
+  background-color: #FFFFFF;
+  padding: 0;
+  cursor: pointer;
+}
+.bar button[type=submit] .search-button {
+  font-size: 1.2rem;
+  color: #0D6EFD;
 }
 
 .bar:focus, .bar:hover, .bar:focus-within {

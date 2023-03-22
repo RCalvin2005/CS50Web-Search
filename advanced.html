@@ -27,7 +27,32 @@
                 <span id="advanced-search">Advanced Search</span>
             </div>
             <form action="https://google.com/search">
-                <input type="text" name="q">
+                <div class="form-container">
+                    <div class="row">
+                        <span class="input-heading">Find pages with...</span>
+                        <span class="help-heading">To do this in the search box.</span>                        
+                    </div>
+                    <div class="row">
+                        <label for="all">all these words:</label>
+                        <input autocomplete="off" type="text" name="as_q" id="all">
+                        <span class="help">Type the important words: <span class="mono">tri-colour rat terrier</span></span>
+                    </div>
+                    <div class="row">
+                        <label for="exact">this exact word or phrase:</label>
+                        <input autocomplete="off" type="text" name="as_epq" id="exact">
+                        <span class="help">Put exact words in quotes: <span class="mono">"rat terrier"</span></span>
+                    </div>
+                    <div class="row">
+                        <label for="any">any of these words:</label>
+                        <input autocomplete="off" type="text" name="as_oq" id="any">
+                        <span class="help">Type <span class="mono">OR</span> between all the words you want: <span class="mono">miniature OR standard</span></span>
+                    </div>
+                    <div class="row">
+                        <label for="none">none of these words:</label>
+                        <input autocomplete="off" type="text" name="as_eq" id="none">
+                        <span class="help">Put a minus sign just before words that you don't want: <span class="mono">-rodent, -"Jack Russell"</span></span>
+                    </div>
+                </div>
                 <input type="submit" value="Advanced Search">
             </form>
         </div>

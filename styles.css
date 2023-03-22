@@ -147,6 +147,11 @@ a, .logo-regular, .logo-header {
   box-shadow: 0 1px 6px rgba(32, 32, 32, 0.2078431373);
 }
 
+.button-container {
+  display: flex;
+  gap: 1rem;
+}
+
 .title-container {
   display: flex;
   align-items: center;

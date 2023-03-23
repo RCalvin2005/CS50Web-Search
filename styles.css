@@ -1,3 +1,5 @@
+/* Just to note, quite a few of the values below such as colours, font-size, margin, etc. are referenced directly from Google's own CSS with minor adjustments.
+That said, unlike Google's which uses Flexbox for the page layout, I chose to go with Grid instead since I find it to be simpler.*/
 * {
   box-sizing: border-box;
 }
@@ -62,7 +64,7 @@ a, .logo-regular, .logo-header {
   font-size: 1rem;
   font-weight: 400;
   text-align: end;
-  margin: -15px 5px 0 0;
+  margin: -15px 7px 0 0;
 }
 
 .logo-header {
